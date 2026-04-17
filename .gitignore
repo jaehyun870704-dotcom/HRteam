@@ -1,0 +1,32 @@
+# Dependencies
+app/node_modules/
+
+# Build output
+app/dist/
+app/dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+*.local
+.env
+.env.*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Claude local settings (keep agents and CLAUDE.md, skip local overrides)
+.claude/settings.local.json
