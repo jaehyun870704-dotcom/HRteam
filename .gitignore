@@ -1,8 +1,7 @@
 # Dependencies
 app/node_modules/
 
-# Build output
-app/dist/
+# Build output (dist는 배포용으로 포함)
 app/dist-ssr/
 
 # Logs

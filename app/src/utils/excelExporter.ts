@@ -5,7 +5,7 @@ import type { InvoiceData } from '../types/invoice';
 // ── 스타일 상수 ────────────────────────────────────────────────────────────
 
 const THIN: Border = { style: 'thin', color: { argb: 'FF000000' } };
-const ALL_BORDERS: Borders = { top: THIN, bottom: THIN, left: THIN, right: THIN };
+const ALL_BORDERS: Borders = { top: THIN, bottom: THIN, left: THIN, right: THIN, diagonal: {} };
 
 function solidFill(argb: string): Fill {
   return { type: 'pattern', pattern: 'solid', fgColor: { argb } };

@@ -44,7 +44,7 @@ function getRawValue(invoice: InvoiceData, key: string): string {
     const field = key.slice(7) as keyof InvoiceData['totals'];
     return String(invoice.totals[field] ?? 0);
   }
-  return String((invoice as Record<string, unknown>)[key] ?? '');
+  return String((invoice as unknown as Record<string, unknown>)[key] ?? '');
 }
 
 function applyEdit(invoice: InvoiceData, key: string, raw: string): InvoiceData {

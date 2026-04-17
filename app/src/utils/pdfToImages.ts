@@ -32,7 +32,7 @@ export async function convertPdfToImages(file: File): Promise<string[]> {
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error(`페이지 ${pageNum}: canvas 2d context를 가져올 수 없습니다.`);
 
-    await page.render({ canvasContext: ctx, viewport }).promise;
+    await page.render({ canvasContext: ctx, viewport, canvas } as Parameters<typeof page.render>[0]).promise;
 
     images.push(canvas.toDataURL('image/png'));
   }
